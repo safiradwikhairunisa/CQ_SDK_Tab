@@ -23,5 +23,18 @@ namespace PraktikumADO
         {
             conn = new SqlConnection("Data Source=PIREE\\FIRA;Initial Catalog=DBAkademikADO;Integrated Security=True");
         }
+
+        private void btnConnect_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Koneksi();
+                conn.Open();
+
+                MessageBox.Show("Koneksi ke database berhasil");
+
+                conn.Close();
+            }
+        }
     }
 }
