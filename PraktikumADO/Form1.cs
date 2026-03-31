@@ -19,5 +19,9 @@ namespace PraktikumADO
         {
             InitializeComponent();
         }
+        private void Koneksi()
+        {
+            conn = new SqlConnection("Data Source=PIREE\\FIRA;Initial Catalog=DBAkademikADO;Integrated Security=True");
+        }
     }
 }
