@@ -58,5 +58,10 @@ namespace PraktikumADO
 
                 conn.Close();
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
